@@ -1,0 +1,14 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false, 
+    "redirects": [
+        { "source": "/index.html", "destination": "/", "permanent": true }
+    ],
+    "rewrites": [
+        { "source": "/", "destination": "/index.html"},
+        { "source": "/blog", "destination": "/html/blog/blogs-intro.html" },
+        { "source": "/blog/:year/:month/:day", "destination": "/html/blog/blogs/:year/:month/:day.html"},
+        { "source": "/changelog", "destination": "/html/changelog/changelog.html"},
+        { "source": "/projects", "destination": "/html/projects/projects.html"}
+    ]
+}
