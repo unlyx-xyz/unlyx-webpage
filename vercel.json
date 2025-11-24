@@ -1,14 +1,16 @@
-{
-    "cleanUrls": true,
+{ 
     "trailingSlash": false, 
     "redirects": [
-        { "source": "/index.html", "destination": "/", "permanent": true }
+        { "source": "/index.html", "destination": "/", "statusCode": 301 },
+        { "source": "/html/projects/projects.html", "destination": "/projects", "statusCode": 301 },
+        { "source": "/html/changelog/changelog.html", "destination": "/changelog", "statusCode": 301 },
+        { "source": "/html/blog/blogs-intro.html", "destination": "/blog", "statusCode": 301 },
+        { "source": "/html/blog/blogs/:year/:month/:day.html", "destination": "/blog/:year/:month/:day", "statusCode": 301}
     ],
     "rewrites": [
-        { "source": "/", "destination": "/index.html"},
-        { "source": "/blog", "destination": "/html/blog/blogs-intro.html" },
-        { "source": "/blog/:year/:month/:day", "destination": "/html/blog/blogs/:year/:month/:day.html"},
+        { "source": "/projects", "destination": "/html/projects/projects.html"},
         { "source": "/changelog", "destination": "/html/changelog/changelog.html"},
-        { "source": "/projects", "destination": "/html/projects/projects.html"}
+        { "source": "/blog", "destination": "/html/blog/blogs-intro.html"},
+        { "source": "/blog/:year/:month/:day", "destination": "/html/blog/blogs/:year/:month/:day.html"}
     ]
 }
