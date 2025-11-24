@@ -1,0 +1,20 @@
+/* DESKTOP +750px */
+.profile-picture {
+    display: flex;
+    flex-direction: row;
+}
+.profile-picture__item {
+    padding: var(--scale-em-xxs);
+}
+.profile-picture__item img {
+    width: var(--scale-em-md); max-width: var(--scale-em-md);
+    height: var(--scale-em-md); max-height: var(--scale-em-md)
+}
+
+/* PHONE + TABLET +750px */
+
+@media ( max-width: 750px ) {
+    .profile-picture {
+        display: none;
+    }
+}

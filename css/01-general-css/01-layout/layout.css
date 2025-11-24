@@ -1,0 +1,40 @@
+/* DESKTOP +750px */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: calc(var(--scale-rem-3xl) + 15vw);
+    margin: 0 auto;
+    padding: var(--scale-rem-3xs);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--scale-em-md);
+    gap: var(--scale-em-sm);
+}
+
+
+/* PHONE + TABLET -750px */ 
+
+@media ( max-width: 750px ) {
+
+    .main {
+        flex-wrap: wrap;
+    }
+    
+}

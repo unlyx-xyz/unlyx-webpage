@@ -1,0 +1,33 @@
+/* DESKTOP +750px */
+.support {
+    padding: var(--scale-em-xxs);
+}
+
+.support-button {
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    padding: var(--scale-em-xxs);
+    animation: buttonDown 0.25s ease-in-out forwards;
+}
+.support-button:hover { animation: buttonUp 0.25s ease-in-out forwards }
+
+@keyframes buttonUp {
+    from {transform: scale(1.0); background-color: var(--color-primary);}
+    to   {transform: scale(1.15); background-color: transparent;}
+}
+@keyframes buttonDown {
+    from   {transform: scale(1.15); background-color: transparent;}
+    to     {transform: scale(1.0); background-color: var(--color-primary);}
+}
+
+.quick-info--support {
+    text-justify: center;
+    text-align: center;
+}
+
+/* PHONE + TABLET -750px */
+@media (max-width: 750px) {
+    .support {
+        transform: scale(0.9)
+    }
+}

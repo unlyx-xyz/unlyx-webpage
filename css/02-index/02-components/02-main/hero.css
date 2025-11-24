@@ -1,0 +1,47 @@
+.hero {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: var(--scale-em-sm);
+    text-align: center;
+}
+
+.hero__title {
+    font-size: clamp(calc(var(--scale-rem-3xs) + 0.4rem), calc(var(--font-size-3xl) * 1.5), var(--scale-rem-4xl));
+    background: linear-gradient(
+        25deg, 
+        var(--color-primary) 0%, 
+        var(--color-primary) 25%, 
+        var(--color-primary) 50%,
+        var(--color-black) 60%,
+        var(--color-black) 80%,
+        var(--color-primary) 90%,
+        var(--color-primary) 95%,
+        var(--color-primary) 100%
+    );
+    background-size: 400% 400%;
+    background-position: 0% 0%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: slideGradient 20s linear infinite;
+    user-select: none;
+    -webkit-user-drag: none;
+    color: var(--color-primary);  
+}
+
+@keyframes slideGradient {
+    0%   {background-position: 0%   0%}
+    10%  {background-position: 15%  0%}
+    20%  {background-position: 30%  0%}
+    30%  {background-position: 45%  0%}
+    40%  {background-position: 60%  0%}
+    50%  {background-position: 75%  0%}
+    60%  {background-position: 90%  0%}
+    70%  {background-position: 105% 0%}
+    80%  {background-position: 120% 0%}
+    90%  {background-position: 135% 0%}
+    100% {background-position: 150% 0%}
+}

@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--scale-rem-3xl);
+    min-width: var(--scale-rem-3xl);
+    padding: var(--scale-rem-5xs);
+    margin: var(--scale-rem-5xs);
+    border-left: 4px solid var(--color-secondary);
+    border-radius: 4px;
+}
+.card:hover {animation: cardHoverIn 0.25s ease-in-out forwards}
+.card:not(:hover) {animation: cardHoverOut 0.25s ease-in-out forwards}
+
+
+@keyframes cardHoverIn {
+    from { border-left: 4px solid var(--color-secondary); transform: scale(1.0);}
+    to   { border-left: 0px solid transparent; transform: scale(1.05);}
+}
+@keyframes cardHoverOut {
+    from { border-left: 0px solid transparent; transform: scale(1.05);}
+    to   { border-left: 4px solid var(--color-secondary); transform: scale(1.0);}
+}
+
+.card * {
+    padding: var(--scale-em-3xs);
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.title--card {animation: title--cardColorOut 0.25s ease-in-out forwards}
+.title--card:hover {animation: title--cardColorIn 0.25s ease-in-out forwards}
+
+@keyframes title--cardColorIn {
+    from {color: var(--color-white)}
+    to   {color: var(--color-secondary)}
+}
+
+@keyframes title--cardColorOut {
+    from {color: var(--color-secondary)}
+    to   {color: var(--color-white)}
+}
+
+.card__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0.5;
+}

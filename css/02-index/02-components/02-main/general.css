@@ -1,0 +1,66 @@
+/* DESKTOP +750px */
+.general {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    max-height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: var(--scale-em-xs);
+    padding: var(--scale-em-md);
+    border-left: 2px solid var(--color-secondary);
+    border-right: 2px solid var(--color-secondary);
+    border-radius: 0px;
+}
+.general::-webkit-scrollbar {background-color: transparent}
+
+.general__item {
+    position: relative;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.general__item h2 {
+    color: var(--color-secondary);
+    font-size: var(--sacle-rem-3xs);
+}
+
+.text--languages {font-size: clamp(var(--scale-rem-4xs), var(--font-size-xl), var(--scale-rem-4xs));}
+
+.general__item--context::after,
+.general__item--languages::after,
+.general__item--interests::after,
+.general__item--working-on::after, 
+.general__item--my-future::after {
+    display: block;
+    content: '';
+    width: 0%;
+    top: 22.5px;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+    border-bottom: 1px solid var(--color-secondary);
+    animation: reverseSlideBorder 0.2s ease-in-out forwards;
+}
+
+.general__item--context:hover::after,
+.general__item--languages:hover::after,
+.general__item--interests:hover::after,
+.general__item--working-on:hover::after, 
+.general__item--my-future:hover::after {
+    animation: slideBorder 0.2s ease-in-out forwards;
+}
+
+@keyframes slideBorder {from {width: 0%} to {width: 100%}}
+@keyframes reverseSlideBorder {from {width: 100%} to {width: 0%}}
+
+.general__item--context {grid-area: 1/1/1/3}
+.general__item--languages {align-self: flex-start}
+.general__item--interests {align-self: flex-start}
+.general__item--working-on {grid-area: 3/1/3/3}
+.general__item--my-future {grid-area: 4/1/4/3}
+
+/* PHONE + TABLET -750px */
+

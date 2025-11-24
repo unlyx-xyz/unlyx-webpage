@@ -1,0 +1,56 @@
+:root {
+
+    --scale-rem-6xs: 0.25rem;
+    --scale-rem-5xs: 0.5rem;
+    --scale-rem-4xs: 0.75rem;
+    --scale-rem-3xs: 1rem;
+    --scale-rem-xxs: 2rem;
+    --scale-rem-xs:  3rem;
+    --scale-rem-sm:  4rem;
+    --scale-rem-md:  5rem;
+    --scale-rem-lg:  10rem;
+    --scale-rem-xl:  15rem;
+    --scale-rem-xxl: 20rem;
+    --scale-rem-3xl: 40rem;
+    --scale-rem-4xl: 60rem;
+    --scale-rem-5xl: 80rem;
+    --scale-rem-6xl: 100rem;
+
+    --scale-em-3xs:  0.1em;
+    --scale-em-xxs:  0.25em;
+    --scale-em-xs:   0.50em;
+    --scale-em-sm:   0.75em;
+    --scale-em-normal: 1em;
+    --scale-em-md:   1.25em;
+    --scale-em-lg:   1.5em;
+    --scale-em-xl:   1.75em;
+
+    --font-size-8xs:    0.1vw;
+    --font-size-7xs:    0.2vw;
+    --font-size-6xs:    0.3vw;
+    --font-size-5xs:    0.4vw;
+    --font-size-4xs:    0.5vw;
+    --font-size-3xs:    0.6vw;
+    --font-size-xxs:    0.7vw;
+    --font-size-xs:     0.8vw;
+    --font-size-sm:     0.9vw;
+    --font-size-normal: 1vw;
+    --font-size-md:     1.1vw;
+    --font-size-lg:     1.2vw;
+    --font-size-xl:     1.3vw;
+    --font-size-xxl:    1.4vw;
+    --font-size-3xl:    1.5vw;
+    --font-size-4xl:    1.6vw;
+    --font-size-5xl:    1.7vw;
+    --font-size-6xl:    1.8vw;
+    --font-size-7xl:    1.9vw;
+    --font-size-8xl:    2vw;
+
+    --font-primary: 'Lato';
+
+    --color-primary:   rgba(250, 135, 161, 1);
+    --color-secondary: rgba(253, 189, 196, 1);
+    --color-black:     black;
+    --color-white:     white;
+
+}
