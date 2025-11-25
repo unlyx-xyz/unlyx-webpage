@@ -5,19 +5,19 @@
 
 .support-button {
     border-radius: 8px;
-    background-color: var(--color-primary);
+    background-color: var(--color-main);
     padding: var(--scale-em-xxs);
     animation: buttonDown 0.25s ease-in-out forwards;
 }
 .support-button:hover { animation: buttonUp 0.25s ease-in-out forwards }
 
 @keyframes buttonUp {
-    from {transform: scale(1.0); background-color: var(--color-primary);}
+    from {transform: scale(1.0); background-color: var(--color-main);}
     to   {transform: scale(1.15); background-color: transparent;}
 }
 @keyframes buttonDown {
     from   {transform: scale(1.15); background-color: transparent;}
-    to     {transform: scale(1.0); background-color: var(--color-primary);}
+    to     {transform: scale(1.0); background-color: var(--color-main);}
 }
 
 .quick-info--support {

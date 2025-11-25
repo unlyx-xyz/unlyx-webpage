@@ -1,5 +1,3 @@
-[significance-hl] { color: var(--color-white) !important }
-[significance-hl="significant"] { color: var(--color-secondary) !important }
-[significance-hl="significant+"] { color: var(--color-secondary) !important; font-style: italic; }
-[significance-hl="important"] { color: var(--color-primary) !important }
-[significance-hl="important+"] { color: var(--color-primary) !important; font-style: italic; }
+[significance-hl] { color: var(--color-foreground) !important }
+[significance-hl="significant"] { color: var(--color-main) !important }
+[significance-hl="significant+"] { color: var(--color-main) !important; font-style: italic; }

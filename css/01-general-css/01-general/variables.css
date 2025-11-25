@@ -48,9 +48,8 @@
 
     --font-primary: 'Lato';
 
-    --color-primary:   rgba(250, 135, 161, 1);
-    --color-secondary: rgba(253, 189, 196, 1);
-    --color-black:     black;
-    --color-white:     white;
+    --color-main: rgba(253, 189, 196, 1);
+    --color-background:     black;
+    --color-foreground:     white;
 
 }

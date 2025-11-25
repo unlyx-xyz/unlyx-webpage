@@ -11,14 +11,14 @@
     font-size: clamp(calc(var(--scale-rem-3xs) + 0.4rem), calc(var(--font-size-3xl) * 1.5), var(--scale-rem-4xl));
     background: linear-gradient(
         25deg, 
-        var(--color-primary) 0%, 
-        var(--color-primary) 25%, 
-        var(--color-primary) 50%,
-        var(--color-black) 60%,
-        var(--color-black) 80%,
-        var(--color-primary) 90%,
-        var(--color-primary) 95%,
-        var(--color-primary) 100%
+        var(--color-main) 0%, 
+        var(--color-main) 25%, 
+        var(--color-main) 50%,
+        var(--color-background) 75%,
+        var(--color-background) 80%,
+        var(--color-main) 90%,
+        var(--color-main) 95%,
+        var(--color-main) 100%
     );
     background-size: 400% 400%;
     background-position: 0% 0%;
@@ -29,7 +29,6 @@
     animation: slideGradient 20s linear infinite;
     user-select: none;
     -webkit-user-drag: none;
-    color: var(--color-primary);  
 }
 
 @keyframes slideGradient {

@@ -9,8 +9,8 @@
     overflow-x: hidden;
     gap: var(--scale-em-xs);
     padding: var(--scale-em-md);
-    border-left: 2px solid var(--color-secondary);
-    border-right: 2px solid var(--color-secondary);
+    border-left: 2px solid var(--color-main);
+    border-right: 2px solid var(--color-main);
     border-radius: 0px;
 }
 .general::-webkit-scrollbar {background-color: transparent}
@@ -22,7 +22,7 @@
 }
 
 .general__item h2 {
-    color: var(--color-secondary);
+    color: var(--color-main);
     font-size: var(--sacle-rem-3xs);
 }
 
@@ -41,7 +41,7 @@
     left: 0;
     z-index: 9999;
     position: absolute;
-    border-bottom: 1px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-main);
     animation: reverseSlideBorder 0.2s ease-in-out forwards;
 }
 
