@@ -25,8 +25,9 @@
     <link rel="stylesheet" href="/css/01-general-css/02-header/navigation.css">
     <link rel="stylesheet" href="/css/01-general-css/02-header/support.css">
     <link rel="stylesheet" href="/css/01-general-css/01-layout/layout.css">
-    <link rel="stylesheet" href="/css/01-general-css/03-footer/footer.css">
-    
+    <link rel="stylesheet" href="/css/01-general-css/03-footer/credits.css">
+    <link rel="stylesheet" href="/css/01-general-css/03-footer/theme-toggler.css">
+
 </head>
 <body class="notranslate">
     <div class="layout">
@@ -63,6 +64,21 @@
         </header>
         <main class="main">
             <section class="changelogs">
+
+                <article class="card"> 
+                    <section class="card__header">
+                        <h2 class="text title title--card">VERSION V1.1:</h2>
+                    </section>
+                    <section class="card__body">
+                        <p class="text text--card">
+                            v1.1: Feature theme-toggler button<br>
+                        </p>
+                    </section>
+                    <section class="card__footer">
+                        <p class="text quick-info quick-info--card">17:05PM Wednesday, November 26, 2025</p>
+                        <p class="text quick-info quick-info--card">© unlyx.xyz</p>
+                    </section>
+                </article>
 
                 <article class="card"> 
                     <section class="card__header">
@@ -107,12 +123,19 @@
             </section> 
         </main>
         <footer class="footer">
+            <section class="theme-toggler">
+                <button class="theme-toggler__button">
+                    <i class="fa-solid fa-sun theme-toggler__icon-light"></i>
+                    <i class="fa-solid fa-moon theme-toggler__icon-dark"></i>
+                </button>
+            </section>
             <section class="credits">
                 <article class="credits__item">
                     <h6 class="text quick-info quick-info--credits"> © unlyx.xyz // made with love. </h6>
                 </article>
             </section>
         </footer>
-    </div>    
+    </div> 
+    <script src="/js/01-general-js/03-footer/theme-toggler.js"></script>
 </body>
 </html>

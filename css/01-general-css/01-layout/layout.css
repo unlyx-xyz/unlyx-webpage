@@ -28,6 +28,11 @@
     gap: var(--scale-em-sm);
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /* PHONE + TABLET -750px */ 
 

@@ -1,0 +1,24 @@
+.theme-toggler__button {
+    border: none;
+    background-color: transparent;
+}
+
+.theme-toggler__icon-light,
+.theme-toggler__icon-dark {
+    display: none;
+    max-height: var(--scale-rem-6xs);
+    max-width: var(--scale-rem-6xs);
+    font-size: clamp(var(--scale-rem-3xs), var(--font-size-xl), var(--scale-rem-3xs));
+    color: var(--color-foreground);
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+.theme-toggler__button {
+    animation: rotateAnimation 15s linear infinite
+}
+
+@keyframes rotateAnimation {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
