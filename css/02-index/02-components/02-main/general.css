@@ -10,10 +10,16 @@
     gap: var(--scale-em-xs);
     padding: var(--scale-em-md);
     border-left: 2px solid var(--color-main);
-    border-right: 2px solid var(--color-main);
     border-radius: 0px;
 }
-.general::-webkit-scrollbar {background-color: transparent}
+.general::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+.general::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 100px;
+}
 
 .general__item {
     position: relative;

@@ -1,0 +1,15 @@
+.changelogs {
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: var(--scale-rem-xxl);
+    padding: var(--scale-rem-3xs);
+}
+
+.changelogs::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+.changelogs::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 100px;
+}
