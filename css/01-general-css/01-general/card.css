@@ -6,10 +6,9 @@
     margin: var(--scale-rem-5xs);
     border-left: 4px solid var(--color-main);
     border-radius: 4px;
+    animation: cardHoverOut var(--card-animation-cooldown) ease-in-out forwards
 }
-.card:hover {animation: cardHoverIn 0.25s ease-in-out forwards}
-.card:not(:hover) {animation: cardHoverOut 0.25s ease-in-out forwards}
-
+.card.on-animation {animation: cardHoverIn var(--card-animation-cooldown) ease-in-out forwards}
 
 @keyframes cardHoverIn {
     from { border-left: 4px solid var(--color-main); transform: scale(1.0);}
@@ -26,8 +25,8 @@
     user-select: none;
 }
 
-.title--card {animation: title--cardColorOut 0.25s ease-in-out forwards}
-.title--card:hover {animation: title--cardColorIn 0.25s ease-in-out forwards}
+.title--card {animation: title--cardColorOut var(--title-card-animation-cooldown) ease-in-out forwards}
+.title--card.on-animation {animation: title--cardColorIn var(--title-card-animation-cooldown) ease-in-out forwards}
 
 @keyframes title--cardColorIn {
     from {color: var(--color-foreground)}

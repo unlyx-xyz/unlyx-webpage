@@ -1,3 +1,5 @@
+import AnimationHandler from "../01-general/animations-handler.js";
+
 const THEME_DARK = 0;
 const THEME_LIGHT = 1;
 const DEFAULT_THEME = THEME_DARK;
@@ -6,8 +8,6 @@ const COLOR_PRIMARY = "rgba(250, 135, 161, 1)";
 const COLOR_SECONDARY = "rgba(253, 189, 196, 1)";
 const COLOR_BLACK = "black";
 const COLOR_WHITE = "white";
-
-const MAXIMUM_ROTATION_DEGREES = 360;
 
 const USER_THEME_KEY = "user_theme";
 
@@ -45,14 +45,9 @@ const toggleTheme = () => {
     localStorage.setItem(USER_THEME_KEY, THEME_DARK)
 }
 
-const animationTrigger = (object, animation_stop_time) => {
-    object.classList.add("on_Animation");
-    setTimeout(() => {object.classList.remove("on_Animation")}, animation_stop_time);
-}
-
 if (!localStorage.getItem(USER_THEME_KEY)) {localStorage.setItem(USER_THEME_KEY, DEFAULT_THEME)};
 updateTheme();
 
-TRIGGER.addEventListener("click", () => {toggleTheme(); animationTrigger(BODY, 500); updateTheme()});
+TRIGGER.addEventListener("click", () => {toggleTheme(); AnimationHandler.animationTrigger(BODY, 500); updateTheme()});
 
 

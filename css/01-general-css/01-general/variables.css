@@ -52,4 +52,7 @@
     --color-background:     black;
     --color-foreground:     white;
 
+    --card-animation-cooldown: .15s;
+    --title-card-animation-cooldown: .1s;
+
 }
