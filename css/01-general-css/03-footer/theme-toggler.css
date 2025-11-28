@@ -1,13 +1,17 @@
+.theme-toggler {
+    padding: var(--scale-rem-4xs) var(--scale-rem-4xs);
+}
+
 .theme-toggler__button {
     border: none;
     background-color: transparent;
+    width: 100%;
+    height: 100%;
 }
 
 .theme-toggler__icon-light,
 .theme-toggler__icon-dark {
     display: none;
-    max-height: var(--scale-rem-6xs);
-    max-width: var(--scale-rem-6xs);
     font-size: clamp(var(--scale-rem-3xs), var(--font-size-xl), var(--scale-rem-3xs));
     color: var(--color-foreground);
     opacity: 0;

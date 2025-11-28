@@ -8,7 +8,7 @@
     height: 100vh;
     max-width: calc(var(--scale-rem-3xl) + 15vw);
     margin: 0 auto;
-    padding: var(--scale-rem-3xs);
+    padding-top: var(--scale-rem-3xs);
 }
 
 .header {
